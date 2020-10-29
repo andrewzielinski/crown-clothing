@@ -1,4 +1,4 @@
-import './menuitem.styles.scss'
+import './MenuItem.styles.scss'
 
 import React from 'react';
 import {withRouter} from "react-router-dom"
