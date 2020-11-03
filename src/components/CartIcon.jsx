@@ -4,7 +4,7 @@ import {toggleCartHidden} from '../redux/cart/Cart.actions'
 
 import './CartIcon.styles.scss'
 import { ReactComponent as ShoppingIcon } from "../assets/shopping-bag.svg"
-import {selectCartItemsCount} from "../redux/cart/cart.selectors"
+import {selectCartItemsCount} from "../redux/cart/Cart.selectors"
 import {createStructuredSelector} from "reselect"
 
 const CartIcon = ({ toggleCartHidden, itemCount }) => (
