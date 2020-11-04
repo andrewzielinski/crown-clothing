@@ -1,5 +1,3 @@
-import {UserActionTypes} from "../user/User.types"
-
 const INITIAL_STATE = {
   sections: [
     {
