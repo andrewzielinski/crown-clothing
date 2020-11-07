@@ -12,12 +12,12 @@ const selectCategory = (state, props) => props.match.params.collectionId
 
 export const selectCollection = createSelector(
   [selectShopCollections, selectCategory],
-  (collections, category) => collections[category]
+  (collections, category) => collections ? collections[category] : null
 );
 
 export const selectCollectionsForPreview = createSelector(
   selectShopCollections,
-  collections => Object.keys(collections).map(key => collections[key])
+  collections => collections ? Object.keys(collections).map(key => collections[key]) : null
 )
 
 
